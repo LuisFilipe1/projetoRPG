@@ -1,6 +1,24 @@
-let raceSelect = document.getElementById("raceSelect")
-const force = document.getElementById("force")
-calculoAtributos = Math.floor(parseFloat(force - 10)/2);
+function trocaTema(body)
+{
+    body.style.backgroundColor="blue"
+}
+
+
+let raceSelect = document.getElementById("raceSelect");
+//Aqui lista dos atributos e o calculo do modificador.
+ 
+const force = document.geatElementById("force");
+atributoForce = Math.floor(parseFloat(force - 10)/2);
+const dext = document.getElementById("desstreza");
+atributoDestreza = Math.floor(parseFloat(dext - 10)/2);
+const consti = document.getElementById("constituicao");
+atributoConsti = Math.floor(parseFloat(consti - 10)/2);
+const intel = document.getElementById("inteligencia");
+atributoIntel = Math.floor(parseFloat(intel- 10)/2);
+const wis = document.getElementById("sabedoria");
+atributoWis = Math.floor(parseFloat(wis - 10)/2);
+const char = document.getElementById("carisma");
+atributoChar = Math.floor(parseFloat(char - 10)/2);
 console.log = calculoAtributos
 if (raceSelect = Anao){
     
@@ -12,18 +30,7 @@ if (classSelect = Barbaro){
 if (classSelect = Mago){
     
 }
-/*let force = Number(rl.question(`Quanto é sua força ? `));
-let modifforce = Math.floor(parseFloat(force - 10) / 2);
-console.log(`modif: ${modifforce}`);
-let dext = Number(rl.question(`Quanto é sua destreza ? `));
-let modifdext = Math.floor(parseFloat(dext - 10) / 2);
-console.log(`modif: ${modifdext}`);
-let consti = Number(rl.question(`Quanto é sua constituição ? `));
-let modiffconsti = Math.floor(parseFloat(consti - 10) / 2);
-console.log(`modif: ${modiffconsti}`);
-let intel = Number(rl.question(`Quanto é sua intligência ? `));
-let modifintel = Math.floor(parseFloat(intel - 10) / 2);
-console.log(`modif: ${modifintel}`);
+/*
 let char = Number(rl.question(`Quanto é sua carisma ? `));
 let modifchar = Math.floor(parseFloat(char - 10) / 2);
 console.log(`modif: ${modifchar}`);

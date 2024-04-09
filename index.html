@@ -11,8 +11,19 @@
 </head>
 
 <body>
-    <h1> Minha Ficha D&D 5e </h1>
+    <script src="main.js" defer></script>
     <header>
+        <button type="button" class = "modoNoturno" onclick="trocaTema()" alt ="Tema Escuro">Tema Escuro</button>
+        <nav>
+            <span> Minha ficha de RPG</span>
+            <ul>
+                <li> <a> Home </a></li>
+                <li> <a> Estilizar personagem </a></li>
+                <li> <a> Criar novo personagem </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <input type="text" placeholder="NOME">
         <select id="classSelect" name="class">
             <option value="" disabled selected>CLASSE</option>
@@ -56,23 +67,22 @@
         </select>
         <input type="text" placeholder="XP(Pontos de Experiência)">
         <input type="number" placeholder="PONTOS DE VIDA">
-    </header>
-
-    <body>
-        <h2> Aqui vão os atributos, caracteristcas do personagem, inventário, espaço para anotações</h2>
-        <div class = "container">
-            <h3>Atributos</h3>
-            <input type="number" id="force" placeholder="Força">
-            <input type="number" id="destreza" placeholder="destreza">
-            <input type="number" id="constituicao" placeholder="constituição">
-            <input type="number" id="inteligencia" placeholder="inteligencia">
-            <input type="number" id="sabedoria" placeholder="sabedoria">
-            <input type="number" id="carisma" placeholder="carisma">
-        </div>
-    </body>
+        <!--Campo para o mecanismo de 'DADOS DE VIDA' variável pois muda conforme influência de raça e classe.-->
+    </main>
+    <h2> Aqui vão os atributos, caracteristcas do personagem, inventário, espaço para anotações</h2>
+    <div class="container">
+        <h3>Atributos</h3>
+        <input type="number" id="force" placeholder="Força">
+        <input type="number" id="destreza" placeholder="destreza">
+        <input type="number" id="constituicao" placeholder="constituição">
+        <input type="number" id="inteligencia" placeholder="inteligencia">
+        <input type="number" id="sabedoria" placeholder="sabedoria">
+        <input type="number" id="carisma" placeholder="carisma">
+    </div>
     <footer>
         <h2> Aqui vão meus dados para contato e redes sociais</h2>
     </footer>
 </body>
+
 
 </html>
