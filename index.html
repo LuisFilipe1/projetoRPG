@@ -13,7 +13,6 @@
 <body>
     <script src="main.js" defer></script>
     <header>
-        <button type="button" class = "modoNoturno" onclick="trocaTema()" alt ="Tema Escuro">Tema Escuro</button>
         <nav>
             <span> Minha ficha de RPG</span>
             <ul>
@@ -22,6 +21,11 @@
                 <li> <a> Criar novo personagem </a></li>
             </ul>
         </nav>
+        <!-- <select id="styleSelect" name="style">
+            <option value="" disabled selected>Selecione o tipo de RPG</option>
+            <option value="Dungeons">D&D 5e</option>
+            <option value="Tormenta">Tormenta 20</option>
+        </select> -->
     </header>
     <main>
         <input type="text" placeholder="NOME">
@@ -73,16 +77,49 @@
     <div class="container">
         <h3>Atributos</h3>
         <input type="number" id="force" placeholder="Força">
-        <input type="number" id="destreza" placeholder="destreza">
-        <input type="number" id="constituicao" placeholder="constituição">
-        <input type="number" id="inteligencia" placeholder="inteligencia">
-        <input type="number" id="sabedoria" placeholder="sabedoria">
-        <input type="number" id="carisma" placeholder="carisma">
+        <input type="number" id="destreza" placeholder="Destreza">
+        <input type="number" id="constituicao" placeholder="Constituição">
+        <input type="number" id="inteligencia" placeholder="Inteligencia">
+        <input type="number" id="sabedoria" placeholder="Sabedoria">
+        <input type="number" id="carisma" placeholder="Carisma">
+        <input type="text" id="modifForce">
+        <input type="text" id="modifDestreza">
+        <input type="text" id="modifConstituicao">
+        <input type="text" id="modifInteligencia">
+        <input type="text" id="modifSabedoria">
+        <input type="text" id="modifCarisma">
+        <button type="button" onclick="calculoModif()"> Calcular Modificadores</button>
+        <script>
+            function calculoModif() {
+                const force = parseFloat(document.getElementById("force").value);
+                atributoForce = Math.floor(parseFloat(force - 10) / 2);
+                document.getElementById("modifForce").value = atributoForce
+
+                const dext = parseFloat(document.getElementById("destreza").value);
+                atributoDestreza = Math.floor(parseFloat(dext - 10) / 2);
+                document.getElementById("modifDestreza").value = atributoDestreza
+
+                const consti = parseFloat(document.getElementById("constituicao").value);
+                atributoConsti = Math.floor(parseFloat(consti - 10) / 2);
+                document.getElementById("modifConstituicao").value = atributoConsti
+
+                const intel = parseFloat(document.getElementById("inteligencia").value);
+                atributoIntel = Math.floor(parseFloat(intel - 10) / 2);
+                document.getElementById("modifInteligencia").value = atributoIntel
+
+                const wis = parseFloat(document.getElementById("sabedoria").value);
+                atributoWis = Math.floor(parseFloat(wis - 10) / 2);
+                document.getElementById("modifSabedoria").value = atributoWis
+
+                const char = parseFloat(document.getElementById("carisma").value);
+                atributoChar = Math.floor(parseFloat(char - 10) / 2);
+                document.getElementById("modifCarisma").value = atributoChar
+            }
+        </script>
     </div>
     <footer>
         <h2> Aqui vão meus dados para contato e redes sociais</h2>
     </footer>
 </body>
-
 
 </html>

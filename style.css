@@ -10,9 +10,9 @@ header
     padding: 10px;
 }
 body{
-    /*background-image: url('./imgs/background.jpeg');*/
+    background-image: url('./imgs/background.jpeg');
     background-color: #ffebcd;
-    /*background-image: url("https://st.depositphotos.com/2052441/2014/i/600/depositphotos_20148129-stock-photo-papyrus-paper-texture.jpg");*/
+    background-image: url("https://st.depositphotos.com/2052441/2014/i/600/depositphotos_20148129-stock-photo-papyrus-paper-texture.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
