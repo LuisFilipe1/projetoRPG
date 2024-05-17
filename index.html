@@ -21,11 +21,13 @@
                 <li> <a> Criar novo personagem </a></li>
             </ul>
         </nav>
-        <!-- <select id="styleSelect" name="style">
+        <!-- Inclusão futura, campo para alterar o Genero do RPG
+            <select id="styleSelect" name="style">
             <option value="" disabled selected>Selecione o tipo de RPG</option>
             <option value="Dungeons">D&D 5e</option>
             <option value="Tormenta">Tormenta 20</option>
-        </select> -->
+        </select>
+        -->
     </header>
     <main>
         <input type="text" placeholder="NOME">
@@ -76,6 +78,7 @@
     <h2> Aqui vão os atributos, caracteristcas do personagem, inventário, espaço para anotações</h2>
     <div class="container">
         <h3>Atributos</h3>
+        <!--Alterar a forma de todos os atributos com o CSS-->
         <input type="number" id="force" placeholder="Força">
         <input type="number" id="destreza" placeholder="Destreza">
         <input type="number" id="constituicao" placeholder="Constituição">
@@ -89,6 +92,7 @@
         <input type="text" id="modifSabedoria">
         <input type="text" id="modifCarisma">
         <button type="button" onclick="calculoModif()"> Calcular Modificadores</button>
+        <!--Script inserido no meio do código HTML pois no diretório de JS não rodava-->
         <script>
             function calculoModif() {
                 const force = parseFloat(document.getElementById("force").value);
