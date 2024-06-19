@@ -1,9 +1,11 @@
+
 h1{
     text-align: center;
     font-size: 50px;
 }
 header
 {
+    text-align: center;
     font-size: 30px;
     display: inline-flexbox;
     border: 5px solid black;
@@ -16,9 +18,23 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.navegacao{
+    display: inline-flex;
+
+}
 .container{
     display: inline-flex;
     flex-direction: column;
     border: 5px solid black;
     padding: 10px;
+}
+.areaAnotacao{
+    float: right;
+    text-align: justify;
+    border: 5px solid black;
+    padding: 10px;
+    margin-right: 950px;
+}
+footer{
+    text-align: center;
 }
